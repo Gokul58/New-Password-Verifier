@@ -8,7 +8,11 @@ namespace TestProject2
         [Fact]
         public void Test1()
         {
-            
+            var password = new PasswordVerifier();
+
+            password.VerifyPassword("asvdbuwveduvwueoA1");
+
+            Assert.Equal("Successful", "Successful");
 
         }
     }
